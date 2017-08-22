@@ -34,7 +34,7 @@ when 'delivered'
       action :create
     end
     
-    env_files = [Dir["#{workflow_workspace_repo}/environments/*.rb"]]
+    env_files = Dir["#{workflow_workspace_repo}/environments/*.rb"]
 
     puts ''
     env_files.each do |file|
