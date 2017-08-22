@@ -34,8 +34,12 @@ when 'delivered'
       action :create
     end
     
+    env_files = [Dir["#{workflow_workspace_repo}/environments/*.rb"]]
+
     puts ''
-    puts "The workflow_workspace_repo directory is: #{workflow_workspace_repo}"
+    env_file.each |file| do
+      puts "This is an environment: #{file}"
+    end
     puts ''
 
     # Ensure keys are deleted after deploy is done
