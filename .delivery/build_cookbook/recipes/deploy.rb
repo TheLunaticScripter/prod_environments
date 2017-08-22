@@ -37,7 +37,7 @@ when 'delivered'
     env_files = [Dir["#{workflow_workspace_repo}/environments/*.rb"]]
 
     puts ''
-    env_file.each do |file|
+    env_files.each do |file|
       puts "This is an environment: #{file}"
     end
     puts ''
