@@ -3,7 +3,6 @@
 This is a structure and a build_cookbook for deploying a Chef Server Environments through an Automate Pipeline.
 
 ## Usage
-
    - Create a Chef vault item 
    ```json
    {
@@ -19,15 +18,4 @@ This is a structure and a build_cookbook for deploying a Chef Server Environment
      }
    }
    ```
-
-   - Add an environments folder to the cookbook
-
-   - Create a environment file like
-   prod_environment/environments/dev.rb
-   ```ruby
-   name 'dev'
-   description 'The Development Environment'
-   cookbook 'foo' '= 0.1.0'
-   ```
-
    - Push the cookbook through the pipeline and it will update the environments as needed
