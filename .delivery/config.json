@@ -7,7 +7,14 @@
   "delivery-truck": {
     "enable_cookstyle": true
   },
-  "skip_phases": [],
+  "skip_phases": [
+    "unit",
+    "security",
+    "quality",
+    "functional",
+    "provision",
+    "publish"
+  ],
   "job_dispatch": {
     "version": "v2"
   },
