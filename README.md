@@ -3,7 +3,7 @@
 This is a structure and a build_cookbook for deploying a Chef Server Environments through an Automate Pipeline.
 
 ## Usage
-   - Create a Chef vault item 
+   - Create a Chef vault item called workflow-vaults
    ```json
    {
      "id": "my_automate_enterprise-my_automate_org",
