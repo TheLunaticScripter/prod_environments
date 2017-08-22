@@ -36,13 +36,18 @@ when 'delivered'
     
     env_files = Dir["#{workflow_workspace_repo}/environments/*.rb"]
 
-    puts ''
+    # puts ''
     env_files.each do |file|
       shortname = File.basename(file, ".rb")
-      puts "This is an environment: #{file}"
-      puts "This is the shortname: #{shortname}"
+      # puts "This is an environment: #{file}"
+      # puts "This is the shortname: #{shortname}"
+
+      execute "Update the environment #{shortname}" do
+        command "knife environment from file #{file} -c #{knife_rb_path}"
+        live_stream true
+      end
     end
-    puts ''
+    # puts ''
 
     # Ensure keys are deleted after deploy is done
     [client_key_path, knife_rb_path].each do |file_path|
