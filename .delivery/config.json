@@ -13,7 +13,8 @@
     "quality",
     "functional",
     "provision",
-    "publish"
+    "publish",
+    "smoke"
   ],
   "job_dispatch": {
     "version": "v2"
