@@ -38,7 +38,9 @@ when 'delivered'
 
     puts ''
     env_files.each do |file|
+      shortname = File.basename(file, ".rb")
       puts "This is an environment: #{file}"
+      puts "This is the shortname: #{shortname}"
     end
     puts ''
 
