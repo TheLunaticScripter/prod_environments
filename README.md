@@ -8,7 +8,7 @@ This is a structure and a build_cookbook for deploying a Chef Server Environment
    {
      "id": "my_automate_enterprise-my_automate_org",
      "deploy": {
-       "chef_server": [
+       "chef_servers": [
          {
            "url": "https://my-first-chef-server-fqdn/organization/production",
            "user": "my-admin-chef-user",
